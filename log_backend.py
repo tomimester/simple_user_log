@@ -13,7 +13,7 @@ cors = CORS(app, resources={r"/*": {
 @app.route("/d36t/", methods=['POST'])
 def logtest():
     if (request.origin == "https://yourwebsite.com" or request.origin == "https://yoursubdomain.yourwebsite.com") and request.headers['User-Type'] == "none":
-        a = str(request.get_data()).replace('nehezazelet','\t')
+        a = str(request.get_data()).replace('somesmartfieldseparator','\t')
         logtime = datetime.utcnow().strftime('%Y-%m-%d\t%H:%M:%S.%f')[:-3]
         #ip = request.headers.get(request.remote_addr) #('X-Forwarded-For', request.remote_addr)
         if request.headers.getlist("X-Forwarded-For"):
