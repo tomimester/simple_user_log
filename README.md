@@ -6,6 +6,8 @@ It basically logs usage data of your website to your data server anonymously. Yo
 For that, you'll have to use Python and SQL.
 
 For the logging, you'll need:
+- a proper domain name for your data server so you can run it with https
+- https certificate for your data server (recommended: https://letsencrypt.org/)
 - Python 3.x
 - Flask running in a virtual environment (tutorial: https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04)
 - The Python script for the backend I've shared in this repo
